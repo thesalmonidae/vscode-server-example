@@ -1,0 +1,32 @@
+services:
+  python-devcontainer:
+    container_name: python-devcontainer
+    build:
+      context: docker/python-devcontainer
+      args:
+        USER: dev
+        UID: ${UID}
+        GID: ${GID}
+    networks:
+      - toolbox
+    ports:
+      - "20000:8080"
+    volumes:
+      - ./docker/python-devcontainer/settings.json:/home/dev/.local/share/code-server/User/settings.json
+      - ./docker/python-devcontainer/workspace:/home/dev/workspace
+      - ./docker/python-devcontainer/data:/home/dev/.local/share/code-server/coder-logs
+  postgres:
+    image: postgres:15.7
+    container_name: postgres
+    environment:
+      POSTGRES_PASSWORD: postgres
+    networks:
+      - toolbox
+    ports:
+      - "5432:5432"
+    volumes:
+      - ./docker/postgres:/var/lib/postgresql/data
+networks:
+  toolbox:
+    name: toolbox
+    external: true

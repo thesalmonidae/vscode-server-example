@@ -1,0 +1,16 @@
+[2024-06-29T16:04:14.420Z] info  code-server 4.90.3 26c763485b9101fcae2ce56fc0903f0e2d48abe3
+[2024-06-29T16:04:14.424Z] info  Using user-data-dir /home/dev/.local/share/code-server
+[2024-06-29T16:04:14.444Z] info  Using config file /home/dev/.config/code-server/config.yaml
+[2024-06-29T16:04:14.444Z] info  HTTP server listening on http://0.0.0.0:8080/
+[2024-06-29T16:04:14.444Z] info    - Authentication is disabled
+[2024-06-29T16:04:14.444Z] info    - Not serving HTTPS
+[2024-06-29T16:04:14.445Z] info  Session server listening on /home/dev/.local/share/code-server/code-server-ipc.sock
+[16:04:22] 
+
+
+
+
+[16:04:22] Extension host agent started.
+[16:08:13] [172.21.0.1][9093fb2d][ManagementConnection] New connection established.
+[16:08:13] [172.21.0.1][1ce02647][ExtensionHostConnection] New connection established.
+[16:08:14] [172.21.0.1][1ce02647][ExtensionHostConnection] <44> Launched Extension Host Process.
